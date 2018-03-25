@@ -156,7 +156,7 @@ namespace Leap.Unity {
         foreach (Transform t in children) {
           if (palmStrings.Any(w => t.name.ToLower().Contains(w)) == true) {
             base.palm = t;
-
+            break;
           }
         }
       }
